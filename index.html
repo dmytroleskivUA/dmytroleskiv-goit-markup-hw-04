@@ -7,50 +7,61 @@
 
     <title>WebStudio</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts -->
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Modern normalize -->
+
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Custom styles -->
+
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
     <!-- Header section -->
 
     <header class="page-header">
-      <div class="container">
-        <a href="./index.html" class="link logo"> <span class="accent">Web</span>Studio </a>
+      <div class="container header-wrap">
+        <a href="./index.html" class="link logo">
+          <span class="header-logo-accent">Web</span>Studio
+        </a>
 
-        <nav class="main-nav">
-          <ul class="site-nav">
-            <li class="item">
-              <a href="./index.html" class="link current">Studio</a>
+        <nav>
+          <ul class="header-nav">
+            <li class="header-nav-item">
+              <a href="./index.html" class="header-nav-link link current">Studio</a>
             </li>
 
-            <li class="item">
-              <a href="./portfolio.html" class="link">Portfolio</a>
+            <li class="header-nav-item">
+              <a href="./portfolio.html" class="header-nav-link link">Portfolio</a>
             </li>
 
-            <li class="item">
-              <a href="" class="link">Contacts</a>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-link link">Contacts</a>
             </li>
           </ul>
         </nav>
         <!-- Contact nav -->
 
-        <ul class="contact-nav">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+        <ul class="header-contacts">
+          <li class="header-contacts-item">
+            <a href="mailto:info@devstudio.com" class="header-contacts-link link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="item">
-            <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+          <li class="header-contacts-item">
+            <a href="tel:+110001111111" class="header-contacts-link link">+11 (000) 111-11-11</a>
           </li>
         </ul>
       </div>
@@ -63,12 +74,12 @@
 
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="btn btn-hero centered">Order Service</button>
+          <h1 class="hero-title centered">Effective Solutions for Your Business</h1>
+          <button class="btn btn-hero centered" type="button">Order Service</button>
         </div>
       </section>
 
-      <!-- About section -->
+      <!-- Skills section -->
 
       <section class="section">
         <div class="container">
@@ -114,19 +125,23 @@
           <h2 class="title">What Are We Doing</h2>
           <ul class="work-list">
             <li class="item">
-              <a href="" class="link">
-                <img src="./images/what-are-we-doing/img-1.jpg" alt="Computer" width="360" />
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="link">
-                <img src="./images/what-are-we-doing/img-2.jpg" alt="Phone" width="360" />
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="link">
+              <a class="link" href>
                 <img
-                  src="./images/what-are-we-doing/img-3.jpg"
+                  src="./images/gallery/what-are-we-doing/img-1.jpg"
+                  alt="Computer"
+                  width="360"
+                />
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href>
+                <img src="./images/gallery/what-are-we-doing/img-2.jpg" alt="Phone" width="360" />
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href>
+                <img
+                  src="./images/gallery/what-are-we-doing/img-3.jpg"
                   alt="Hand holding phone"
                   width="360"
                 />
@@ -144,7 +159,7 @@
 
           <ul class="team-list">
             <li class="item">
-              <img src="./images/our-team/img-1.jpg" alt="Mark Guerrero" width="264" />
+              <img src="./images/team/img-1.jpg" alt="Mark Guerrero" width="264" />
 
               <div class="team-content">
                 <h3 class="subtitle text-center">Mark Guerrero</h3>
@@ -152,7 +167,7 @@
               </div>
             </li>
             <li class="item">
-              <img src="./images/our-team/img-2.jpg" alt="Tom Ford" width="264" />
+              <img src="./images/team/img-2.jpg" alt="Tom Ford" width="264" />
 
               <div class="team-content">
                 <h3 class="subtitle text-center">Tom Ford</h3>
@@ -160,7 +175,7 @@
               </div>
             </li>
             <li class="item">
-              <img src="./images/our-team/img-3.jpg" alt="Camila Garcia" width="264" />
+              <img src="./images/team/img-3.jpg" alt="Camila Garcia" width="264" />
 
               <div class="team-content">
                 <h3 class="subtitle text-center">Camila Garcia</h3>
@@ -168,7 +183,7 @@
               </div>
             </li>
             <li class="item">
-              <img src="./images/our-team/img-4.jpg" alt="Daniel Wilson" width="264" />
+              <img src="./images/team/img-4.jpg" alt="Daniel Wilson" width="264" />
 
               <div class="team-content">
                 <h3 class="subtitle text-center">Daniel Wilson</h3>
@@ -184,7 +199,9 @@
 
     <footer class="page-footer">
       <div class="container">
-        <a href="./index.html" class="link logo"> <span class="accent">Web</span>Studio </a>
+        <a class="link logo" href="./index.html">
+          <span class="footer-logo-accent">Web</span>Studio
+        </a>
 
         <p class="text">
           Increase the flow of customers and sales for your business with digital marketing & growth

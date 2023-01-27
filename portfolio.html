@@ -7,50 +7,61 @@
 
     <title>WebStudio</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts -->
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Modern normalize -->
+
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Custom styles -->
+
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
     <!-- Header section -->
 
     <header class="page-header">
-      <div class="container">
-        <a href="./index.html" class="link logo"> <span class="accent">Web</span>Studio </a>
+      <div class="container header-wrap">
+        <a href="./index.html" class="link logo">
+          <span class="header-logo-accent">Web</span>Studio
+        </a>
 
-        <nav class="main-nav">
-          <ul class="site-nav">
-            <li class="item">
-              <a href="./index.html" class="link">Studio</a>
+        <nav>
+          <ul class="header-nav">
+            <li class="header-nav-item">
+              <a href="./index.html" class="header-nav-link link">Studio</a>
             </li>
 
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Portfolio</a>
+            <li class="header-nav-item">
+              <a href="./portfolio.html" class="header-nav-link link current">Portfolio</a>
             </li>
 
-            <li class="item">
-              <a href="" class="link">Contacts</a>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-link link">Contacts</a>
             </li>
           </ul>
         </nav>
         <!-- Contact nav -->
 
-        <ul class="contact-nav">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+        <ul class="header-contacts">
+          <li class="header-contacts-item">
+            <a href="mailto:info@devstudio.com" class="header-contacts-link link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="item">
-            <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+          <li class="header-contacts-item">
+            <a href="tel:+110001111111" class="header-contacts-link link">+11 (000) 111-11-11</a>
           </li>
         </ul>
       </div>
@@ -61,7 +72,7 @@
     <main>
       <!-- Portfolio nav-->
 
-      <section class="section">
+      <section class="portfolio-filter section">
         <div class="container">
           <h1 class="title visually-hidden">Portfolio</h1>
 
@@ -89,7 +100,7 @@
             <li class="item">
               <div class="card-thumb">
                 <img
-                  src="./images/services/img-1.jpg"
+                  src="./images/gallery/services/img-1.jpg"
                   alt="Banking App Interface Concept"
                   width="360"
                   height="300"
@@ -104,7 +115,7 @@
             <li class="item">
               <div class="card-thumb">
                 <img
-                  src="./images/services/img-2.jpg"
+                  src="./images/gallery/services/img-2.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -118,7 +129,7 @@
             <li class="item">
               <div class="card-thumb">
                 <img
-                  src="./images/services/img-3.jpg"
+                  src="./images/gallery/services/img-3.jpg"
                   alt="Meditaion App"
                   width="360"
                   height="300"
@@ -133,7 +144,7 @@
             <li class="item">
               <div class="card-thumb">
                 <img
-                  src="./images/services/img-4.jpg"
+                  src="./images/gallery/services/img-4.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -148,7 +159,7 @@
             <li class="item">
               <div class="card-thumb">
                 <img
-                  src="./images/services/img-5.jpg"
+                  src="./images/gallery/services/img-5.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -163,7 +174,7 @@
             <li class="item">
               <div class="card-thumb">
                 <img
-                  src="./images/services/img-6.jpg"
+                  src="./images/gallery/services/img-6.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -178,7 +189,7 @@
             <li class="item">
               <div class="card-thumb">
                 <img
-                  src="./images/services/img-7.jpg"
+                  src="./images/gallery/services/img-7.jpg"
                   alt="Instagram Stories Concept"
                   width="360"
                   height="300"
@@ -192,7 +203,7 @@
             <li class="item">
               <div class="card-thumb">
                 <img
-                  src="./images/services/img-8.jpg"
+                  src="./images/gallery/services/img-8.jpg"
                   alt="Organic Food"
                   width="360"
                   height="300"
@@ -206,7 +217,7 @@
             <li class="item">
               <div class="card-thumb">
                 <img
-                  src="./images/services/img-9.jpg"
+                  src="./images/gallery/services/img-9.jpg"
                   alt="Fresh Coffee"
                   width="360"
                   height="300"
@@ -226,7 +237,9 @@
 
     <footer class="page-footer">
       <div class="container">
-        <a href="./index.html" class="link logo"> <span class="accent">Web</span>Studio </a>
+        <a class="link logo" href="./index.html">
+          <span class="footer-logo-accent">Web</span>Studio
+        </a>
 
         <p class="text">
           Increase the flow of customers and sales for your business with digital marketing & growth
