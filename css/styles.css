@@ -234,13 +234,22 @@ button {
   cursor: pointer;
 }
 
-.btn.active,
+.btn.current,
 .btn:hover,
 .btn:focus {
   border-color: var(--accent-txt-bg-cl);
   background-color: var(--accent-txt-bg-cl);
   color: var(--light-primary-text-cl);
 }
+
+.btn .btn-portfolio .current,
+.btn .btn-portfolio:hover,
+.btn .btn-portfolio:focus {
+  border-color: var(--blue-txt-cl);
+  background-color: var(--blue-txt-cl);
+  color: var(--light-primary-text-cl);
+}
+
 
 
 .centered {
@@ -276,12 +285,12 @@ button {
 
 .header-wrap {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  align-items: center;
 }
 
 
 .logo {
+
   color: var(--primary-text-cl);
   font-weight: 800;
   font-size: 18px;
@@ -302,18 +311,28 @@ button {
 
 
 .header-nav {
-  display: flex;
-  margin-left: 76px;
+
+  margin-right: auto;
 }
 
 .header-nav-list {
   display: flex;
+  margin-left: 76px;
   gap: 40px;
 }
 
-.header-nav-item:not(:last-child) {
-  margin-right: 40px;
+.header-nav-link {
+  position: relative;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--primary-text-cl);
+
 }
+
 
 
 .header-nav-link {
@@ -334,16 +353,13 @@ button {
   display: flex;
   gap: 40px;
   align-items: center;
-  margin-left: auto;
-}
-
-.header-contacts-item:not(:last-child) {
-  margin-right: 40px;
 }
 
 .header-contacts-link {
-  display: inline-flex;
-  align-items: center;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 23px;
+
   line-height: 1.5;
   color: var(--secondary-txt-cl);
 
@@ -477,7 +493,7 @@ button {
 
 
 .btn-portfolio {
-
+  color: var(--blue-txt-cl);
   background-color: var(--portfolio-filter-button-bg-cl);
 }
 
