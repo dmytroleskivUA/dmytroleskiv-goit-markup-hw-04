@@ -635,7 +635,7 @@ button {
   |  PORTFOLIO
   |============================
 */
-
+.card-thumb {}
 
 .portfolio-filter {
   padding-top: 96px;
@@ -683,8 +683,10 @@ button {
 }
 
 .portfolio-list-link {
+  display: inline-block;
   box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
 }
+
 
 /**
   |============================
@@ -780,4 +782,5 @@ button {
   height: 24px;
 
   fill: var(--borders-light-cl);
+
 }
